@@ -1,0 +1,1 @@
+These folders contain tutorials and resources for learning type script.

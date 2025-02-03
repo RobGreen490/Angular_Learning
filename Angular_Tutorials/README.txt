@@ -1,3 +1,5 @@
+This folder contains a few angular projects as well as learning instructions for creating angular projects.
+
 To generate a new Angular project(this creates a folder with the project inside it):
 cd into the folder you want the new folder to be
 type:
