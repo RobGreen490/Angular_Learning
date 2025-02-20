@@ -1,0 +1,1 @@
+To create a new Spring project, you must utilize the website: https://start.spring.io/
