@@ -11,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 // defining routes with an array of route items
 const routes: Routes =[
   // The order of the routes are important, first match wins top down. Start most specific to most generic.
-  {path: 'category/id', component: ProductListComponent},
+  {path: 'category/:id', component: ProductListComponent},
   {path: 'category', component: ProductListComponent},
   {path: 'products', component: ProductListComponent},
   {path: '', redirectTo: '/products', pathMatch: 'full'},// this path redirects the user to the products page if no path is entered

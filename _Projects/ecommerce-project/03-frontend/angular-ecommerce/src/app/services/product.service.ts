@@ -15,11 +15,13 @@ private baseUrl = "http://localhost:8080/api/products";
 
   getProductList(theCategoryId: number): Observable<Product[]>{
 
-  // @TODO: need to build URL based on category id ... will come back to this later.
+  // need to build URL based on category id ... will come back to this later.
+  const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${theCategoryId}`
 
-    return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
-      map(response => response._embedded.products)
-    );
+
+  return this.httpClient.get<GetResponse>(searchUrl).pipe(
+    map(response => response._embedded.products)
+  );
   }
 }
 
